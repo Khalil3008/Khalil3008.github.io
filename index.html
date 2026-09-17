@@ -1,29 +1,130 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
     <meta charset="UTF-8">
-    <title>Mijn website</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background: #f2f2f2;
-            padding: 50px;
-        }
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        h1 {
-            color: #333;
-        }
+    <!-- Titel die in het browsertabblad verschijnt -->
+    <title>Pagina.io | Home</title>
 
-        p {
-            color: #666;
-        }
-    </style>
+    <!-- Het externe CSS-bestand zorgt voor alle opmaak -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <h1>Welkom op mijn website!</h1>
-    <p>Dit is mijn eerste website met GitHub Pages.</p>
+<header>
+    <nav class="navbar">
+
+        <!-- Logo / naam van de website -->
+        <a href="index.html" class="logo">Pagina.io</a>
+
+        <!-- Navigatiemenu -->
+        <ul class="nav-links">
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="ivo.html">Invoer → Uitvoer</a></li>
+
+            <!-- Dropdownmenu -->
+            <li class="dropdown">
+                <button class="dropbtn">Onderwerpen ▾</button>
+
+                <div class="dropdown-content">
+                    <a href="binair.html">Binair stelsel</a>
+                    <a href="kleurmodellen.html">Kleurmodellen</a>
+                    <a href="compressie.html">Compressie</a>
+                </div>
+            </li>
+
+            <li><a href="ai.html">AI</a></li>
+
+        </ul>
+    </nav>
+</header>
+
+
+<!-- Grote introductie -->
+<section class="hero">
+
+    <div class="hero-content">
+
+        <span class="badge">Informatica • 5 VWO</span>
+
+        <h1>Pagina.io</h1>
+
+        <p>
+            Welkom op mijn website over informatica,
+            computers, data, kleur, compressie en AI.
+        </p>
+
+    </div>
+
+</section>
+
+
+<main class="container">
+
+    <h2 class="page-title">Wie ben ik?</h2>
+
+    <p>
+        Mijn naam is <strong>Khalil</strong> en ik zit op het
+        <strong>Vlietland College</strong> in 5 VWO.
+        In mijn vrije tijd ga ik graag met vrienden naar buiten
+        om even rond te hangen.
+    </p>
+
+    <p>
+        Ik vind computers en games interessant. Ik speel graag
+        verschillende soorten games. Vooral retro games trekken
+        vaak mijn interesse, maar ik speel ook nieuwere games.
+        Naast gamen en met vrienden afspreken sport ik ook
+        regelmatig binnen.
+    </p>
+
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>🎮 Gamen</h3>
+            <p>
+                Ik speel graag games op de computer en vind
+                zowel oude als nieuwe games interessant.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>👾 Retro games</h3>
+            <p>
+                Oude games hebben een eigen stijl en daarom
+                vind ik het leuk om ze te ontdekken.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🏋️ Sport</h3>
+            <p>
+                Naast gamen sport ik regelmatig binnen.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>👥 Vrienden</h3>
+            <p>
+                Ik vind het leuk om met vrienden naar buiten
+                te gaan en samen tijd door te brengen.
+            </p>
+        </div>
+
+    </div>
+
+</main>
+
+
+<footer>
+    <p>© 2026 Pagina.io — gemaakt door Khalil</p>
+</footer>
 
 </body>
 </html>

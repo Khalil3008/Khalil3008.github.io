@@ -16,7 +16,7 @@
 
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="ivo.html">Invoer → Uitvoer</a>
+            <li><a href="ivo.html">Invoer → Uitvoer</a></li>
 
             <li class="dropdown">
                 <button class="dropbtn">Onderwerpen ▾</button>
@@ -32,7 +32,6 @@
     </nav>
 </header>
 
-
 <main class="container">
 
     <h1 class="page-title">Compressie</h1>
@@ -40,50 +39,65 @@
     <p>
         Compressie betekent dat je gegevens kleiner maakt,
         zodat ze minder opslagruimte gebruiken of sneller
-        verstuurd kunnen worden.
+        verstuurd kunnen worden. Dit kan bijvoorbeeld bij
+        afbeeldingen, video's en andere bestanden.
     </p>
-
 
     <div class="cards">
 
         <div class="card">
             <h3>🟦 Bitmap</h3>
+
             <p>
-                Een bitmapafbeelding bestaat uit heel veel pixels.
-                Iedere pixel bevat informatie over bijvoorbeeld
-                zijn kleur.
+                Een bitmapafbeelding bestaat uit heel veel kleine
+                pixels. Iedere pixel bevat informatie over
+                bijvoorbeeld de kleur.
             </p>
+
             <p>
-                Een foto van een telefoon is meestal een voorbeeld
-                van een raster- of bitmapafbeelding.
+                Een digitale foto van een telefoon is meestal
+                een voorbeeld van een bitmapafbeelding.
             </p>
         </div>
 
         <div class="card">
             <h3>📐 Vector</h3>
+
             <p>
                 Een vectorafbeelding bestaat uit lijnen, vormen
                 en wiskundige beschrijvingen.
             </p>
+
             <p>
-                Hierdoor kan een vectorafbeelding vaak veel groter
-                worden gemaakt zonder dat hij wazig wordt.
+                Hierdoor kan een vectorafbeelding vaak worden
+                vergroot zonder dat de randen wazig worden.
+                Een logo is een veelvoorkomend voorbeeld.
             </p>
         </div>
 
     </div>
 
-
     <div class="visual">
         <div>
-            <img src="images/Compression.jpg"
+            <img
+                src="images/Compression.jpg"
+                alt="Illustratie van gegevenscompressie"
+                style="width:100%; max-width:450px; height:180px; object-fit:cover; border-radius:10px;"
+            >
+
             <div class="big-symbol">🟩 → 📦</div>
+
             <h2>Compressie maakt gegevens kleiner</h2>
         </div>
     </div>
 
-
     <h2>Bitmap versus vector</h2>
+
+    <p>
+        Het belangrijkste verschil is de manier waarop de
+        afbeelding wordt opgebouwd. Een bitmap gebruikt pixels,
+        terwijl een vector lijnen en vormen gebruikt.
+    </p>
 
     <table>
         <tr>
@@ -100,8 +114,8 @@
 
         <tr>
             <td>Voorbeeld</td>
-            <td>Foto</td>
-            <td>Logo</td>
+            <td>Digitale foto</td>
+            <td>Logo of pictogram</td>
         </tr>
 
         <tr>
@@ -109,8 +123,30 @@
             <td>Kan wazig worden</td>
             <td>Blijft scherp</td>
         </tr>
+
+        <tr>
+            <td>Bestandsformaat</td>
+            <td>JPG, PNG</td>
+            <td>SVG</td>
+        </tr>
     </table>
 
+    <h2>Wat heeft dit met compressie te maken?</h2>
+
+    <p>
+        Compressie zorgt ervoor dat bestanden minder opslagruimte
+        innemen. Bij afbeeldingen kan dit bijvoorbeeld door
+        gegevens slimmer op te slaan of bepaalde informatie
+        weg te laten.
+    </p>
+
+    <p>
+        Bij compressie zonder kwaliteitsverlies blijft alle
+        oorspronkelijke informatie behouden. Bij compressie
+        met kwaliteitsverlies wordt een deel van de informatie
+        verwijderd. Hierdoor kan de bestandsgrootte kleiner
+        worden, maar kan de kwaliteit ook afnemen.
+    </p>
 
     <div class="video-box">
 
@@ -118,22 +154,23 @@
 
         <p>
             <strong>Waarom deze video?</strong><br>
-            Ik heb een video nodig die het verschil tussen
-            bitmap en vector duidelijk laat zien. De video
-            kan daardoor helpen om het verschil tussen pixels
-            en wiskundig beschreven vormen te begrijpen.
+            Deze video is toegevoegd om extra uitleg te geven
+            over compressie en digitale afbeeldingen. Zo kun je
+            de theorie beter begrijpen en zien hoe het onderwerp
+            in de praktijk werkt.
         </p>
 
         <iframe
-            src="https://www.youtube.com/embed/VIDEO_ID_LATER"
-            title="Uitleg bitmap en vector"
+            src="https://www.youtube.com/embed/pv2Cw5CWwqQ"
+            title="Uitleg over compressie"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
             allowfullscreen>
         </iframe>
 
     </div>
 
 </main>
-
 
 <footer>
     <p>© 2026 Pagina.io — gemaakt door Khalil</p>

@@ -1,207 +1,137 @@
 <!DOCTYPE html>
+<!-- Geeft aan dat dit een HTML5-document is -->
 <html lang="nl">
+<!-- Geeft aan dat de taal van de website Nederlands is -->
 
 <head>
-    <!-- Geeft aan dat dit document HTML5 gebruikt -->
-    <!-- lang="nl" geeft aan dat de website Nederlandstalig is -->
-
+    <!-- Bepaalt de tekencodering voor speciale tekens -->
     <meta charset="UTF-8">
-    <!-- Zorgt ervoor dat speciale tekens correct worden weergegeven -->
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Zorgt ervoor dat de website zich aanpast aan de schermgrootte -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Compressie | Pagina.io</title>
-    <!-- Bepaalt de titel die bovenaan het browsertabblad verschijnt -->
+    <!-- Bepaalt de titel die in het browsertabblad verschijnt -->
+    <title>Pagina.io | Kleurmodellen</title>
 
+    <!-- Koppelt het HTML-bestand aan het CSS-bestand -->
     <link rel="stylesheet" href="style.css">
-    <!-- Koppelt het CSS-bestand aan deze HTML-pagina voor de vormgeving -->
 </head>
 
 <body>
-    <!-- Hier begint de inhoud die bezoekers op de website zien -->
 
+    <!-- De header bevat het navigatiemenu bovenaan de website -->
     <header>
-        <!-- De header bevat de bovenkant van de website en het navigatiemenu -->
-
         <nav class="navbar">
-            <!-- Het navigatiemenu bevat links naar de andere pagina's -->
 
+            <!-- Logo dat naar de homepage verwijst -->
             <a href="index.html" class="logo">Pagina.io</a>
-            <!-- Het logo van de website; klikken brengt je naar de homepage -->
 
+            <!-- Bevat de links naar de verschillende pagina's -->
             <ul class="nav-links">
-                <!-- Maakt een lijst met navigatielinks -->
-
                 <li><a href="index.html">Home</a></li>
                 <!-- Link naar de homepage -->
 
                 <li><a href="ivo.html">Invoer → Uitvoer</a></li>
                 <!-- Link naar de pagina over invoer, verwerking en uitvoer -->
 
+                <!-- Dit onderdeel bevat het uitklapmenu -->
                 <li class="dropdown">
-                    <!-- Dit onderdeel bevat het uitklapmenu met onderwerpen -->
-
                     <button class="dropbtn">Onderwerpen ▾</button>
-                    <!-- Knop waarmee het uitklapmenu wordt geopend -->
+                    <!-- Knop om het uitklapmenu met onderwerpen te openen -->
 
                     <div class="dropdown-content">
-                        <!-- Hier staan de links die in het uitklapmenu verschijnen -->
-
+                        <!-- Links die in het uitklapmenu worden weergegeven -->
                         <a href="binair.html">Binair stelsel</a>
-                        <!-- Link naar de pagina over het binaire stelsel -->
-
                         <a href="kleurmodellen.html">Kleurmodellen</a>
-                        <!-- Link naar de pagina over kleurmodellen -->
-
                         <a href="compressie.html">Compressie</a>
-                        <!-- Link naar deze pagina over compressie -->
-
                     </div>
                 </li>
 
                 <li><a href="ai.html">AI</a></li>
                 <!-- Link naar de pagina over kunstmatige intelligentie -->
-
             </ul>
         </nav>
     </header>
 
-    <main>
-        <!-- Het main-element bevat de belangrijkste inhoud van de pagina -->
+    <!-- Het hoofdgedeelte van de pagina -->
+    <main class="container">
 
-        <section class="container">
-            <!-- De container groepeert de inhoud en regelt via CSS de breedte en ruimte -->
+        <!-- Hoofdtitel van de pagina -->
+        <h1 class="page-title">Kleurmodellen</h1>
 
-            <h1>Compressie</h1>
-            <!-- De hoofdtitel van de pagina -->
+        <!-- Introductie over digitale kleuren en kleurmodellen -->
+        <p>
+            Computers kunnen kleuren digitaal opslaan. Hiervoor worden kleurmodellen gebruikt. Twee bekende kleurmodellen zijn <strong>RGB</strong> en <strong>CMYK</strong>.
+        </p>
 
+        <!-- Bevat de informatiekaarten over RGB en CMYK -->
+        <div class="cards">
+
+            <!-- Eerste kaart met uitleg over RGB -->
+            <div class="card">
+                <h3>🔴 RGB</h3>
+                <p>
+                    RGB staat voor Red, Green en Blue. Dit model wordt vooral gebruikt voor schermen, zoals telefoons, televisies en computermonitoren.
+                </p>
+            </div>
+
+            <!-- Tweede kaart met uitleg over CMYK -->
+            <div class="card">
+                <h3>🖨️ CMYK</h3>
+                <p>
+                    CMYK staat voor Cyan, Magenta, Yellow en Key/Black. Dit model wordt vooral gebruikt bij drukwerk.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- Visueel gedeelte met een afbeelding en een korte uitleg over RGB -->
+        <div class="visual">
+            <div>
+                <!-- Toont de afbeelding uit de map images -->
+                <img src="images/colors.jpg" alt="Voorbeeld van RGB-kleuren" style="width:100%; max-width:450px; height:180px; object-fit:cover; border-radius:10px;" >
+
+                <!-- Symboliseert de drie basiskleuren van het RGB-model -->
+                <div class="big-symbol">🔴 🟢 🔵</div>
+
+                <!-- Titel die uitlegt waar RGB voor staat -->
+                <h2>RGB = Red + Green + Blue</h2>
+            </div>
+        </div>
+
+        <!-- Uitgebreidere uitleg over het RGB-kleurmodel -->
+        <h2>RGB</h2>
+        <p>
+            RGB staat voor rood, groen en blauw. Bij dit kleurmodel wordt een kleur gemaakt door deze drie kleuren met verschillende sterktes te combineren. Een scherm bestaat uit heel veel kleine pixels die samen het beeld vormen. Als rood, groen en blauw allemaal op maximale sterkte staan, ontstaat wit. Als alle drie uitstaan, ontstaat zwart.
+        </p>
+
+        <!-- Uitgebreidere uitleg over het CMYK-kleurmodel -->
+        <h2>CMYK</h2>
+        <p>
+            CMYK staat voor Cyan, Magenta, Yellow en Key (zwart). Dit kleurmodel wordt vooral gebruikt bij het afdrukken van afbeeldingen en documenten. Door verschillende hoeveelheden inkt te combineren, kunnen veel kleuren op papier worden weergegeven.
+        </p>
+
+        <!-- Gedeelte met de uitlegvideo over kleurmodellen -->
+        <div class="video-box">
+
+            <!-- Titel boven de video -->
+            <h2>🎬 Video over kleurmodellen</h2>
+
+            <!-- Legt uit waarom de video bij de theorie hoort -->
             <p>
-                Compressie is het verkleinen van bestanden, zodat ze minder
-                opslagruimte innemen en sneller kunnen worden verstuurd.
+                <strong>Waarom deze video?</strong><br>
+                Deze video is toegevoegd om meer uitleg te geven over kleurmodellen. Zo kun je beter begrijpen hoe kleuren digitaal worden weergegeven en wat het verschil is tussen verschillende kleurmodellen.
             </p>
-            <!-- Introduceert het onderwerp en legt uit waarom compressie wordt gebruikt -->
 
-            <div class="visual">
-                <!-- Dit gedeelte bevat een afbeelding en uitleg over compressie -->
-
-                <img src="images/Compression.jpg"
-                     alt="Illustratie van bestandscompressie">
-                <!-- Toont de afbeelding Compression.jpg uit de map images -->
-                <!-- Het alt-attribuut beschrijft de afbeelding voor toegankelijkheid -->
-
-                <h2>Wat is compressie?</h2>
-                <!-- Tussenkop voor de uitleg -->
-
-                <p>
-                    Bij compressie wordt de hoeveelheid gegevens die nodig is
-                    om een bestand op te slaan verminderd.
-                </p>
-                <!-- Legt uit wat er met een bestand gebeurt tijdens compressie -->
-
-            </div>
-
-            <div class="cards">
-                <!-- Groepeert de informatie in afzonderlijke kaarten -->
-
-                <div class="card">
-                    <!-- Eerste kaart over verliesloze compressie -->
-
-                    <h2>Lossless compressie</h2>
-                    <!-- Titel van de eerste soort compressie -->
-
-                    <p>
-                        Bij lossless compressie gaat er geen informatie verloren.
-                        Het oorspronkelijke bestand kan volledig worden hersteld.
-                    </p>
-                    <!-- Legt uit dat alle oorspronkelijke gegevens behouden blijven -->
-
-                    <p>
-                        Deze methode is bijvoorbeeld handig voor tekstdocumenten
-                        en bestanden waarbij alle gegevens belangrijk zijn.
-                    </p>
-                    <!-- Geeft voorbeelden van situaties waarin verliesloze compressie nuttig is -->
-
-                </div>
-
-                <div class="card">
-                    <!-- Tweede kaart over compressie met informatieverlies -->
-
-                    <h2>Lossy compressie</h2>
-                    <!-- Titel van de tweede soort compressie -->
-
-                    <p>
-                        Bij lossy compressie wordt een deel van de informatie
-                        verwijderd om het bestand kleiner te maken.
-                    </p>
-                    <!-- Legt uit dat er bij deze methode gegevens verloren gaan -->
-
-                    <p>
-                        Dit wordt bijvoorbeeld gebruikt bij JPEG-afbeeldingen
-                        en MP3-audiobestanden.
-                    </p>
-                    <!-- Geeft voorbeelden van bestandsformaten die lossy compressie kunnen gebruiken -->
-
-                </div>
-
-                <div class="card">
-                    <!-- Derde kaart over bitmap- en vectorafbeeldingen -->
-
-                    <h2>Bitmap en vector</h2>
-                    <!-- Titel van de kaart -->
-
-                    <p>
-                        Een bitmapafbeelding bestaat uit pixels.
-                        Als je deze sterk vergroot, kunnen de pixels zichtbaar worden.
-                    </p>
-                    <!-- Beschrijft hoe een bitmapafbeelding is opgebouwd -->
-
-                    <p>
-                        Een vectorafbeelding bestaat uit wiskundig beschreven vormen.
-                        Daardoor kan deze worden vergroot zonder dat de randen
-                        wazig worden door pixels.
-                    </p>
-                    <!-- Legt het verschil uit tussen bitmap- en vectorafbeeldingen -->
-
-                </div>
-
-            </div>
-
-            <div class="video-box">
-                <!-- Dit blok bevat de uitlegvideo over compressie -->
-
-                <h2>Bekijk de uitlegvideo</h2>
-                <!-- Titel boven de video -->
-
-                <p>
-                    Bekijk de video voor extra uitleg over compressie.
-                </p>
-                <!-- Korte introductie van de video -->
-
-                <iframe
-                    src="https://www.youtube.com/embed/OtDxDvCpPL4"
-                    title="Video over compressie"
-                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen>
-                </iframe>
-                <!-- Laadt de YouTube-video rechtstreeks op de website -->
-                <!-- src bepaalt welke video wordt geladen -->
-                <!-- title beschrijft de video voor toegankelijkheid -->
-                <!-- allow geeft toestemming voor bepaalde videofuncties -->
-                <!-- allowfullscreen maakt het mogelijk de video op volledig scherm te bekijken -->
-
-            </div>
-
-        </section>
+            <!-- Sluit de YouTube-video in op de website -->
+            <iframe src="https://www.youtube.com/embed/-b2pAEHEQZc" title="Uitleg kleurmodellen" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+        </div>
     </main>
 
+    <!-- De footer is het onderste gedeelte van de website -->
     <footer>
-        <!-- De footer is het onderste gedeelte van de website -->
-
         <p>© 2026 Pagina.io — gemaakt door Khalil</p>
-        <!-- Vermeldt het copyrightjaar, de websitelnaam en de maker -->
-
     </footer>
 
 </body>

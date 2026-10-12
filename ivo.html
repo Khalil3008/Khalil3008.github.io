@@ -2,131 +2,189 @@
 <html lang="nl">
 
 <head>
+    <!-- Geeft aan dat dit een HTML5-document is -->
+    <!-- lang="nl" geeft aan dat de website in het Nederlands is -->
+
     <meta charset="UTF-8">
+    <!-- Zorgt ervoor dat speciale tekens, zoals é en →, goed worden weergegeven -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina.io | Invoer - Verwerking - Uitvoer</title>
+    <!-- Zorgt ervoor dat de website zich aanpast aan de breedte van het scherm -->
+
+    <title>Invoer, verwerking en uitvoer | Pagina.io</title>
+    <!-- Dit is de titel die je bovenaan het browsertabblad ziet -->
+
     <link rel="stylesheet" href="style.css">
+    <!-- Koppelt het HTML-bestand aan het CSS-bestand met de vormgeving -->
 </head>
 
 <body>
+    <!-- Hier begint de zichtbare inhoud van de website -->
 
-<header>
-    <nav class="navbar">
-        <a href="index.html" class="logo">Pagina.io</a>
+    <header>
+        <!-- De header bevat de bovenkant van de website, waaronder het navigatiemenu -->
 
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="ivo.html">Invoer → Uitvoer</a></li>
+        <nav class="navbar">
+            <!-- Het navigatiemenu waarmee bezoekers naar andere pagina's kunnen gaan -->
 
-            <li class="dropdown">
-                <button class="dropbtn">Onderwerpen ▾</button>
+            <a href="index.html" class="logo">Pagina.io</a>
+            <!-- Dit is het logo. Als je erop klikt, ga je naar de homepage -->
 
-                <div class="dropdown-content">
-                    <a href="binair.html">Binair stelsel</a>
-                    <a href="kleurmodellen.html">Kleurmodellen</a>
-                    <a href="compressie.html">Compressie</a>
+            <ul class="nav-links">
+                <!-- Een lijst met links naar de verschillende pagina's -->
+
+                <li><a href="index.html">Home</a></li>
+                <!-- Link naar de homepage -->
+
+                <li><a href="ivo.html">Invoer → Uitvoer</a></li>
+                <!-- Link naar deze pagina over invoer, verwerking en uitvoer -->
+
+                <li class="dropdown">
+                    <!-- Dit onderdeel bevat het uitklapmenu met onderwerpen -->
+
+                    <button class="dropbtn">Onderwerpen ▾</button>
+                    <!-- Met deze knop wordt het menu met onderwerpen weergegeven -->
+
+                    <div class="dropdown-content">
+                        <!-- Hier staan de links die in het uitklapmenu verschijnen -->
+
+                        <a href="binair.html">Binair stelsel</a>
+                        <!-- Link naar de pagina over het binaire stelsel -->
+
+                        <a href="kleurmodellen.html">Kleurmodellen</a>
+                        <!-- Link naar de pagina over kleurmodellen -->
+
+                        <a href="compressie.html">Compressie</a>
+                        <!-- Link naar de pagina over compressie -->
+                    </div>
+                </li>
+
+                <li><a href="ai.html">AI</a></li>
+                <!-- Link naar de pagina over kunstmatige intelligentie -->
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Het main-element bevat de belangrijkste inhoud van deze pagina -->
+
+        <section class="container">
+            <!-- De container groepeert de inhoud en zorgt via CSS voor de juiste breedte en ruimte -->
+
+            <h1>Invoer → verwerking → uitvoer</h1>
+            <!-- De hoofdtitel van de pagina -->
+
+            <p>
+                Een computer verwerkt gegevens volgens een bepaald proces.
+                Dit proces bestaat uit invoer, verwerking en uitvoer.
+            </p>
+            <!-- Legt kort uit wat het onderwerp van de pagina is -->
+
+            <div class="steps">
+                <!-- Groepeert de drie stappen van het proces -->
+
+                <div class="step">
+                    <!-- Het eerste blok beschrijft de invoer -->
+
+                    <h2>1. Invoer</h2>
+                    <!-- Titel van de eerste stap -->
+
+                    <p>
+                        Invoer is de informatie die je aan een computer geeft,
+                        bijvoorbeeld door te typen of met een muis te klikken.
+                    </p>
+                    <!-- Voorbeelden van gegevens die de computer binnenkrijgt -->
                 </div>
-            </li>
 
-            <li><a href="ai.html">AI</a></li>
-        </ul>
-    </nav>
-</header>
+                <div class="step">
+                    <!-- Het tweede blok beschrijft de verwerking -->
 
-<main class="container">
+                    <h2>2. Verwerking</h2>
+                    <!-- Titel van de tweede stap -->
 
-    <h1 class="page-title">Invoer → verwerking → uitvoer</h1>
+                    <p>
+                        De computer verwerkt de ingevoerde gegevens met behulp
+                        van instructies en programma's.
+                    </p>
+                    <!-- Beschrijft wat de computer met de invoer doet -->
+                </div>
 
-    <p>
-        Een computer werkt met gegevens. Eerst worden gegevens
-        ingevoerd. Daarna worden ze verwerkt door de computer.
-        Uiteindelijk krijgen we een uitvoer.
-    </p>
+                <div class="step">
+                    <!-- Het derde blok beschrijft de uitvoer -->
 
-    <div class="steps">
+                    <h2>3. Uitvoer</h2>
+                    <!-- Titel van de derde stap -->
 
-        <div class="step">
-            <div class="step-number">1</div>
-            <h2>Invoer</h2>
-            <p>
-                Gegevens komen de computer binnen.
-                Bijvoorbeeld via een toetsenbord, muis,
-                microfoon of touchscreen.
-            </p>
-        </div>
+                    <p>
+                        De computer geeft het resultaat weer, bijvoorbeeld op
+                        een scherm of via luidsprekers.
+                    </p>
+                    <!-- Beschrijft hoe de computer het resultaat laat zien -->
+                </div>
 
-        <div class="step">
-            <div class="step-number">2</div>
-            <h2>Verwerking</h2>
-            <p>
-                De processor verwerkt de ingevoerde gegevens
-                volgens instructies en programma's.
-            </p>
-        </div>
+            </div>
 
-        <div class="step">
-            <div class="step-number">3</div>
-            <h2>Uitvoer</h2>
-            <p>
-                De computer geeft het resultaat terug.
-                Bijvoorbeeld via een beeldscherm, speaker
-                of printer.
-            </p>
-        </div>
+            <div class="visual">
+                <!-- Een visueel gedeelte waarin een afbeelding en voorbeeld staan -->
 
-    </div>
+                <img src="images/ivo.jpg"
+                     alt="Schematische weergave van invoer, verwerking en uitvoer">
+                <!-- Toont de afbeelding ivo.jpg uit de map images -->
+                <!-- Het alt-attribuut beschrijft de afbeelding voor toegankelijkheid -->
 
-    <div class="visual">
-        <div>
-            <img
-                src="images/ivo.jpg"
-                alt="Invoer, verwerking en uitvoer"
-                style="width: 100%; max-width: 450px; height: 180px; object-fit: cover; border-radius: 10px;">
+                <p class="symbol">⌨️ → 🧠 → 🖥️</p>
+                <!-- Geeft met symbolen de volgorde van invoer, verwerking en uitvoer aan -->
 
-            <div class="big-symbol">⌨️ → 🧠 → 🖥️</div>
-            <h2>Invoer → verwerking → uitvoer</h2>
-        </div>
-    </div>
+                <h2>Een voorbeeld uit het dagelijks leven</h2>
+                <!-- Titel van het voorbeeld -->
 
-    <h2>Voorbeeld</h2>
+                <p>
+                    Je typt een som op een rekenmachine (invoer).
+                    De rekenmachine berekent het antwoord (verwerking).
+                    Daarna verschijnt het antwoord op het scherm (uitvoer).
+                </p>
+                <!-- Laat met een praktisch voorbeeld zien hoe de drie stappen samenwerken -->
 
-    <p>
-        Stel dat je op je toetsenbord de letter A indrukt.
-        Het toetsenbord is de invoer. De computer verwerkt
-        het signaal en uiteindelijk verschijnt de letter A
-        op je beeldscherm. Dat is de uitvoer.
-    </p>
+            </div>
 
-    <div class="video-box">
+            <div class="video-box">
+                <!-- Dit blok bevat de uitlegvideo -->
 
-        <h2>🎬 Video over invoer, verwerking en uitvoer</h2>
+                <h2>Bekijk de uitlegvideo</h2>
+                <!-- Titel boven de video -->
 
-        <p>
-            Bekijk de video voor extra uitleg over het onderwerp
-            en hoe gegevens door een computer worden verwerkt.
-        </p>
+                <p>
+                    Bekijk de video voor extra uitleg over invoer,
+                    verwerking en uitvoer.
+                </p>
+                <!-- Korte introductie van de video -->
 
-        <iframe
-            src="https://www.youtube.com/embed/O_rLBLBLzsY"
-            title="Invoer, verwerking en uitvoer"
-            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen>
-        </iframe>
+                <iframe
+                    src="https://www.youtube.com/embed/O_rLBLBLzsY"
+                    title="Invoer, verwerking en uitvoer"
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                </iframe>
+                <!-- Embed de YouTube-video rechtstreeks op de website -->
+                <!-- src bepaalt welke video wordt getoond -->
+                <!-- title beschrijft de video voor toegankelijkheid -->
+                <!-- allow geeft toestemming voor bepaalde videofuncties -->
+                <!-- allowfullscreen maakt het mogelijk de video op volledig scherm te bekijken -->
 
-    </div>
+            </div>
 
-</main>
+        </section>
+    </main>
 
-<footer>
-      <p>© 2026 Pagina.io</p>
-    <p>
-        Heb je nog vragen? Stuur gerust een
-        <a href="mailto:khalil.boufares@vlietlandcollege.nl">
-            e-mail naar Khalil
-        </a>.
-    </p>
-</footer>
+    <footer>
+        <!-- De footer is het onderste gedeelte van de website -->
+
+        <p>© 2026 Pagina.io — gemaakt door Khalil</p>
+        <!-- Vermeldt het copyrightjaar, de websitelnaam en de maker -->
+
+    </footer>
 
 </body>
 </html>

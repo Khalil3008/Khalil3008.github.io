@@ -3,35 +3,35 @@
 
 <head>
     <!-- Geeft aan dat dit document HTML5 gebruikt -->
-    <!-- lang="nl" geeft aan dat de taal van de website Nederlands is -->
+    <!-- lang="nl" geeft aan dat de website Nederlandstalig is -->
 
     <meta charset="UTF-8">
-    <!-- Zorgt ervoor dat speciale tekens goed worden weergegeven -->
+    <!-- Zorgt ervoor dat speciale tekens correct worden weergegeven -->
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Zorgt ervoor dat de website goed wordt weergegeven op verschillende schermformaten -->
+    <!-- Zorgt ervoor dat de website zich aanpast aan de schermgrootte -->
 
-    <title>Kleurmodellen | Pagina.io</title>
+    <title>Compressie | Pagina.io</title>
     <!-- Bepaalt de titel die bovenaan het browsertabblad verschijnt -->
 
     <link rel="stylesheet" href="style.css">
-    <!-- Koppelt het CSS-bestand aan deze pagina voor de vormgeving -->
+    <!-- Koppelt het CSS-bestand aan deze HTML-pagina voor de vormgeving -->
 </head>
 
 <body>
     <!-- Hier begint de inhoud die bezoekers op de website zien -->
 
     <header>
-        <!-- De header bevat de bovenkant van de website, waaronder het navigatiemenu -->
+        <!-- De header bevat de bovenkant van de website en het navigatiemenu -->
 
         <nav class="navbar">
-            <!-- Het navigatiemenu waarmee bezoekers naar andere pagina's kunnen gaan -->
+            <!-- Het navigatiemenu bevat links naar de andere pagina's -->
 
             <a href="index.html" class="logo">Pagina.io</a>
-            <!-- Dit is het logo; als je erop klikt, ga je naar de homepage -->
+            <!-- Het logo van de website; klikken brengt je naar de homepage -->
 
             <ul class="nav-links">
-                <!-- Maakt een lijst met links naar de verschillende pagina's -->
+                <!-- Maakt een lijst met navigatielinks -->
 
                 <li><a href="index.html">Home</a></li>
                 <!-- Link naar de homepage -->
@@ -40,7 +40,7 @@
                 <!-- Link naar de pagina over invoer, verwerking en uitvoer -->
 
                 <li class="dropdown">
-                    <!-- Dit onderdeel bevat het uitklapmenu -->
+                    <!-- Dit onderdeel bevat het uitklapmenu met onderwerpen -->
 
                     <button class="dropbtn">Onderwerpen ▾</button>
                     <!-- Knop waarmee het uitklapmenu wordt geopend -->
@@ -52,10 +52,10 @@
                         <!-- Link naar de pagina over het binaire stelsel -->
 
                         <a href="kleurmodellen.html">Kleurmodellen</a>
-                        <!-- Link naar deze pagina over kleurmodellen -->
+                        <!-- Link naar de pagina over kleurmodellen -->
 
                         <a href="compressie.html">Compressie</a>
-                        <!-- Link naar de pagina over compressie -->
+                        <!-- Link naar deze pagina over compressie -->
 
                     </div>
                 </li>
@@ -68,106 +68,125 @@
     </header>
 
     <main>
-        <!-- Het main-element bevat de belangrijkste inhoud van deze pagina -->
+        <!-- Het main-element bevat de belangrijkste inhoud van de pagina -->
 
         <section class="container">
             <!-- De container groepeert de inhoud en regelt via CSS de breedte en ruimte -->
 
-            <h1>Kleurmodellen</h1>
+            <h1>Compressie</h1>
             <!-- De hoofdtitel van de pagina -->
 
             <p>
-                Kleurmodellen worden gebruikt om kleuren digitaal te beschrijven.
-                Twee bekende kleurmodellen zijn RGB en CMYK.
+                Compressie is het verkleinen van bestanden, zodat ze minder
+                opslagruimte innemen en sneller kunnen worden verstuurd.
             </p>
-            <!-- Introduceert het onderwerp en noemt de twee kleurmodellen -->
+            <!-- Introduceert het onderwerp en legt uit waarom compressie wordt gebruikt -->
 
             <div class="visual">
-                <!-- Dit gedeelte bevat een afbeelding en algemene uitleg -->
+                <!-- Dit gedeelte bevat een afbeelding en uitleg over compressie -->
 
-                <img src="images/colors.jpg"
-                     alt="Voorbeeld van verschillende kleuren">
-                <!-- Toont de afbeelding colors.jpg uit de map images -->
+                <img src="images/Compression.jpg"
+                     alt="Illustratie van bestandscompressie">
+                <!-- Toont de afbeelding Compression.jpg uit de map images -->
                 <!-- Het alt-attribuut beschrijft de afbeelding voor toegankelijkheid -->
 
-                <h2>Wat zijn kleurmodellen?</h2>
-                <!-- Tussenkop voor de uitleg over kleurmodellen -->
+                <h2>Wat is compressie?</h2>
+                <!-- Tussenkop voor de uitleg -->
 
                 <p>
-                    Een kleurmodel beschrijft hoe kleuren worden opgebouwd
-                    met behulp van verschillende kleurcomponenten.
+                    Bij compressie wordt de hoeveelheid gegevens die nodig is
+                    om een bestand op te slaan verminderd.
                 </p>
-                <!-- Legt uit wat een kleurmodel is -->
+                <!-- Legt uit wat er met een bestand gebeurt tijdens compressie -->
 
             </div>
 
             <div class="cards">
-                <!-- De cards-container groepeert meerdere informatiekaarten -->
+                <!-- Groepeert de informatie in afzonderlijke kaarten -->
 
                 <div class="card">
-                    <!-- Eerste kaart: uitleg over RGB -->
+                    <!-- Eerste kaart over verliesloze compressie -->
 
-                    <h2>RGB</h2>
-                    <!-- Titel van het eerste kleurmodel -->
-
-                    <p>
-                        RGB staat voor Red, Green en Blue.
-                        Dit kleurmodel gebruikt rood, groen en blauw licht
-                        om verschillende kleuren op een scherm te maken.
-                    </p>
-                    <!-- Beschrijft hoe RGB kleuren op schermen maakt -->
+                    <h2>Lossless compressie</h2>
+                    <!-- Titel van de eerste soort compressie -->
 
                     <p>
-                        Door de hoeveelheid rood, groen en blauw licht te veranderen,
-                        kunnen veel verschillende kleuren worden weergegeven.
+                        Bij lossless compressie gaat er geen informatie verloren.
+                        Het oorspronkelijke bestand kan volledig worden hersteld.
                     </p>
-                    <!-- Legt uit dat de combinatie van de drie lichtkleuren andere kleuren oplevert -->
+                    <!-- Legt uit dat alle oorspronkelijke gegevens behouden blijven -->
+
+                    <p>
+                        Deze methode is bijvoorbeeld handig voor tekstdocumenten
+                        en bestanden waarbij alle gegevens belangrijk zijn.
+                    </p>
+                    <!-- Geeft voorbeelden van situaties waarin verliesloze compressie nuttig is -->
 
                 </div>
 
                 <div class="card">
-                    <!-- Tweede kaart: uitleg over CMYK -->
+                    <!-- Tweede kaart over compressie met informatieverlies -->
 
-                    <h2>CMYK</h2>
-                    <!-- Titel van het tweede kleurmodel -->
-
-                    <p>
-                        CMYK staat voor Cyan, Magenta, Yellow en Key (zwart).
-                        Dit kleurmodel wordt vooral gebruikt bij het afdrukken
-                        van afbeeldingen en documenten.
-                    </p>
-                    <!-- Beschrijft de betekenis en toepassing van CMYK -->
+                    <h2>Lossy compressie</h2>
+                    <!-- Titel van de tweede soort compressie -->
 
                     <p>
-                        Bij CMYK worden inkten gecombineerd om kleuren op papier
-                        te maken.
+                        Bij lossy compressie wordt een deel van de informatie
+                        verwijderd om het bestand kleiner te maken.
                     </p>
-                    <!-- Legt uit dat CMYK met inkt werkt in plaats van met licht -->
+                    <!-- Legt uit dat er bij deze methode gegevens verloren gaan -->
+
+                    <p>
+                        Dit wordt bijvoorbeeld gebruikt bij JPEG-afbeeldingen
+                        en MP3-audiobestanden.
+                    </p>
+                    <!-- Geeft voorbeelden van bestandsformaten die lossy compressie kunnen gebruiken -->
+
+                </div>
+
+                <div class="card">
+                    <!-- Derde kaart over bitmap- en vectorafbeeldingen -->
+
+                    <h2>Bitmap en vector</h2>
+                    <!-- Titel van de kaart -->
+
+                    <p>
+                        Een bitmapafbeelding bestaat uit pixels.
+                        Als je deze sterk vergroot, kunnen de pixels zichtbaar worden.
+                    </p>
+                    <!-- Beschrijft hoe een bitmapafbeelding is opgebouwd -->
+
+                    <p>
+                        Een vectorafbeelding bestaat uit wiskundig beschreven vormen.
+                        Daardoor kan deze worden vergroot zonder dat de randen
+                        wazig worden door pixels.
+                    </p>
+                    <!-- Legt het verschil uit tussen bitmap- en vectorafbeeldingen -->
 
                 </div>
 
             </div>
 
             <div class="video-box">
-                <!-- Dit blok bevat de uitlegvideo over kleurmodellen -->
+                <!-- Dit blok bevat de uitlegvideo over compressie -->
 
                 <h2>Bekijk de uitlegvideo</h2>
                 <!-- Titel boven de video -->
 
                 <p>
-                    Bekijk de video voor extra uitleg over kleurmodellen.
+                    Bekijk de video voor extra uitleg over compressie.
                 </p>
                 <!-- Korte introductie van de video -->
 
                 <iframe
-                    src="https://www.youtube.com/embed/-b2pAEHEQZc"
-                    title="Uitleg kleurmodellen"
+                    src="https://www.youtube.com/embed/OtDxDvCpPL4"
+                    title="Video over compressie"
                     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin"
                     allowfullscreen>
                 </iframe>
                 <!-- Laadt de YouTube-video rechtstreeks op de website -->
-                <!-- src bepaalt welke video wordt weergegeven -->
+                <!-- src bepaalt welke video wordt geladen -->
                 <!-- title beschrijft de video voor toegankelijkheid -->
                 <!-- allow geeft toestemming voor bepaalde videofuncties -->
                 <!-- allowfullscreen maakt het mogelijk de video op volledig scherm te bekijken -->

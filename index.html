@@ -1,256 +1,141 @@
 <!DOCTYPE html>
-<!-- Geeft aan dat dit document HTML5 gebruikt. -->
-
 <html lang="nl">
-<!-- Geeft aan dat de taal van de website Nederlands is. -->
 
 <head>
-    <!-- Bevat instellingen en informatie over de webpagina. -->
-
     <meta charset="UTF-8">
-    <!-- Zorgt ervoor dat speciale tekens en emoji's goed worden weergegeven. -->
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Zorgt ervoor dat de website zich aanpast aan verschillende schermgroottes. -->
 
+    <!-- Titel die in het browsertabblad verschijnt -->
     <title>Pagina.io | Home</title>
-    <!-- Bepaalt de titel die bovenaan het browsertabblad verschijnt. -->
 
+    <!-- Het externe CSS-bestand zorgt voor alle opmaak -->
     <link rel="stylesheet" href="style.css">
-    <!-- Koppelt het HTML-bestand aan style.css voor de vormgeving. -->
 </head>
 
 <body>
-<!-- Hier begint de inhoud die bezoekers op de website kunnen zien. -->
-
-
-<!-- HEADER EN NAVIGATIEBALK -->
 
 <header>
-    <!-- De header bevat het bovenste gedeelte van de website. -->
-
     <nav class="navbar">
-        <!-- De navigatiebalk bevat het logo en de links naar andere pagina's. -->
 
+        <!-- Logo / naam van de website -->
         <a href="index.html" class="logo">Pagina.io</a>
-        <!-- Het logo is een link waarmee je teruggaat naar de homepage. -->
 
+        <!-- Navigatiemenu -->
         <ul class="nav-links">
-            <!-- Een ongeordende lijst met navigatielinks. -->
 
-            <li>
-                <a href="index.html">Home</a>
-            </li>
-            <!-- Link naar de homepage. -->
+            <li><a href="index.html">Home</a></li>
 
-            <li>
-                <a href="ivo.html">Invoer → Uitvoer</a>
-            </li>
-            <!-- Link naar de pagina over invoer, verwerking en uitvoer. -->
+            <li><a href="ivo.html">Invoer → Uitvoer</a></li>
 
+            <!-- Dropdownmenu -->
             <li class="dropdown">
-                <!-- Dit onderdeel bevat het uitklapmenu met onderwerpen. -->
-
                 <button class="dropbtn">Onderwerpen ▾</button>
-                <!-- De knop waarmee het menu met onderwerpen wordt geopend. -->
 
                 <div class="dropdown-content">
-                    <!-- Bevat de links die in het uitklapmenu verschijnen. -->
-
                     <a href="binair.html">Binair stelsel</a>
-                    <!-- Link naar de pagina over het binaire stelsel. -->
-
                     <a href="kleurmodellen.html">Kleurmodellen</a>
-                    <!-- Link naar de pagina over kleurmodellen zoals RGB en CMYK. -->
-
                     <a href="compressie.html">Compressie</a>
-                    <!-- Link naar de pagina over compressie. -->
-
                 </div>
             </li>
 
-            <li>
-                <a href="ai.html">AI</a>
-            </li>
-            <!-- Link naar de pagina over kunstmatige intelligentie. -->
+            <li><a href="ai.html">AI</a></li>
 
         </ul>
     </nav>
 </header>
 
 
-<!-- HOOFDINHOUD VAN DE HOMEPAGE -->
+<!-- Grote introductie -->
+<section class="hero">
+
+    <div class="hero-content">
+
+        <span class="badge">Informatica • 5 VWO</span>
+
+        <h1>Pagina.io</h1>
+
+        <p>
+            Welkom op mijn website over informatica,
+            computers, data, kleur, compressie en AI.
+        </p>
+
+    </div>
+
+</section>
+
 
 <main class="container">
-    <!-- De main bevat de belangrijkste inhoud van de pagina.
-         De class container wordt in style.css gebruikt voor de lay-out. -->
+
+    <h2 class="page-title">Wie ben ik?</h2>
+
+    <p>
+        Mijn naam is <strong>Khalil</strong> en ik zit op het
+        <strong>Vlietland College</strong> in 5 VWO.
+        In mijn vrije tijd ga ik graag met vrienden naar buiten
+        om even rond te hangen.
+    </p>
+
+    <p>
+        Ik vind computers en games interessant. Ik speel graag
+        verschillende soorten games. Vooral retro games trekken
+        vaak mijn interesse, maar ik speel ook nieuwere games.
+        Naast gamen en met vrienden afspreken sport ik ook
+        regelmatig binnen.
+    </p>
 
 
-    <!-- INTRODUCTIE EN WELKOMSTEKST -->
+    <div class="cards">
 
-    <section class="hero">
-        <!-- De hero is het opvallende introductiegedeelte bovenaan de homepage. -->
-
-        <p class="badge">Informatica • 5 VWO</p>
-        <!-- Een klein label dat het vak en het schoolniveau aangeeft. -->
-
-        <h1 class="page-title">Pagina.io</h1>
-        <!-- De hoofdtitel van de website. -->
-
-        <p>
-            Welkom op Pagina.io! Op deze website vind je informatie
-            over verschillende onderwerpen binnen de informatica.
-        </p>
-        <!-- De introductietekst verwelkomt bezoekers en vertelt waarover de website gaat. -->
-
-    </section>
-
-
-    <!-- PERSOONLIJKE INTRODUCTIE -->
-
-    <section>
-        <!-- Een apart gedeelte voor informatie over de maker van de website. -->
-
-        <h2>Wie ben ik?</h2>
-        <!-- Een tussenkop die het persoonlijke gedeelte introduceert. -->
-
-        <p>
-            Mijn naam is Khalil en ik zit op het Vlietland College
-            in 5 VWO. Voor informatica heb ik deze website gemaakt
-            om verschillende onderwerpen uit te leggen.
-        </p>
-        <!-- Stelt de maker voor en legt uit waarom de website is gemaakt. -->
-
-    </section>
-
-
-    <!-- KAARTEN MET ONDERWERPEN -->
-
-    <section>
-        <!-- Dit gedeelte groepeert de kaarten met persoonlijke interesses. -->
-
-        <h2>Mijn interesses</h2>
-        <!-- De titel boven de vier kaarten. -->
-
-        <div class="cards">
-            <!-- Groepeert de kaarten.
-                 De CSS bepaalt hoe de kaarten naast of onder elkaar staan. -->
-
-
-            <!-- EERSTE KAART: GAMEN -->
-
-            <div class="card">
-                <!-- Een kaart over gamen. -->
-
-                <img
-                    src="images/gamen.jpg"
-                    alt="Gamen"
-                >
-                <!-- Laadt de afbeelding gamen.jpg uit de map images.
-                     De alt-tekst beschrijft de afbeelding. -->
-
-                <h3>Gamen</h3>
-                <!-- De titel van de eerste kaart. -->
-
-                <p>
-                    Hier staat de tekst over gamen en waarom dit
-                    een van mijn interesses is.
-                </p>
-                <!-- De beschrijving van de eerste kaart. -->
-
-            </div>
-
-
-            <!-- TWEEDE KAART: RETRO GAMES -->
-
-            <div class="card">
-                <!-- Een kaart over retro games. -->
-
-                <img
-                    src="images/retro.jpg"
-                    alt="Retro games"
-                >
-                <!-- Laadt de afbeelding retro.jpg uit de map images. -->
-
-                <h3>Retro games</h3>
-                <!-- De titel van de tweede kaart. -->
-
-                <p>
-                    Hier staat de tekst over retro games en mijn
-                    interesse in oudere videogames.
-                </p>
-                <!-- De beschrijving van de tweede kaart. -->
-
-            </div>
-
-
-            <!-- DERDE KAART: SPORT -->
-
-            <div class="card">
-                <!-- Een kaart over sport. -->
-
-                <img
-                    src="images/sport.jpg"
-                    alt="Sport"
-                >
-                <!-- Laadt de afbeelding sport.jpg uit de map images. -->
-
-                <h3>Sport</h3>
-                <!-- De titel van de derde kaart. -->
-
-                <p>
-                    Hier staat de tekst over sport en waarom
-                    ik hierin geïnteresseerd ben.
-                </p>
-                <!-- De beschrijving van de derde kaart. -->
-
-            </div>
-
-
-            <!-- VIERDE KAART: VRIENDEN -->
-
-            <div class="card">
-                <!-- Een kaart over vrienden. -->
-
-                <img
-                    src="images/vrienden.jpg"
-                    alt="Tijd doorbrengen met vrienden"
-                >
-                <!-- Laadt de afbeelding vrienden.jpg uit de map images. -->
-
-                <h3>Vrienden</h3>
-                <!-- De titel van de vierde kaart. -->
-
-                <p>
-                    Hier staat de tekst over tijd doorbrengen
-                    met vrienden.
-                </p>
-                <!-- De beschrijving van de vierde kaart. -->
-
-            </div>
-
+        <div class="card">
+            <img src="images/gamen.jpg" alt="Gamen">
+            <h3>🎮 Gamen</h3>
+            <p>
+                Ik speel graag games op de computer en vind
+                zowel oude als nieuwe games interessant.
+            </p>
         </div>
-        <!-- Einde van de verzameling kaarten. -->
 
-    </section>
+        <div class="card">
+            <img src="images/retro.jpg" alt="Retro games">
+            <h3>👾 Retro games</h3>
+            <p>
+                Oude games hebben een eigen stijl en daarom
+                vind ik het leuk om ze te ontdekken.
+            </p>
+        </div>
+
+        <div class="card">
+            <img src="images/sport.jpg" alt="Sport">
+            <h3>🏋️ Sport</h3>
+            <p>
+                Naast gamen sport ik regelmatig binnen.
+            </p>
+        </div>
+
+        <div class="card">
+             <img src="images/vrienden.jpg" alt="Vrienden">
+            <h3>👥 Vrienden</h3>
+            <p>
+                Ik vind het leuk om met vrienden naar buiten
+                te gaan en samen tijd door te brengen.
+            </p>
+        </div>
+
+    </div>
 
 </main>
-<!-- Einde van de belangrijkste inhoud van de homepage. -->
 
-
-<!-- FOOTER -->
 
 <footer>
-    <!-- De footer is het onderste gedeelte van de website. -->
-
-    <p>© 2026 Pagina.io — gemaakt door Khalil</p>
-    <!-- Toont het copyrightteken, het jaartal, de websitetitel en de maker. -->
-
+    <p>© 2026 Pagina.io</p>
+     <p>© 2026 Pagina.io</p>
+    <p>
+        Heb je nog vragen? Stuur gerust een
+        <a href="mailto:khalil.boufares@vlietlandcollege.nl">
+            e-mail naar Khalil
+        </a>.
+    </p>
 </footer>
 
-
 </body>
-<!-- Einde van de zichtbare inhoud van de webpagina. -->
-
 </html>
-<!-- Einde van het HTML-document. -->

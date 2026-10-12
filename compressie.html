@@ -2,24 +2,38 @@
 <html lang="nl">
 
 <head>
+    <!-- Stelt de tekencodering in, zodat speciale tekens goed worden weergegeven -->
     <meta charset="UTF-8">
+
+    <!-- Zorgt ervoor dat de website zich aanpast aan de breedte van het scherm -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bepaalt de titel die in het browsertabblad wordt weergegeven -->
     <title>Pagina.io | Compressie</title>
+
+    <!-- Koppelt het HTML-bestand aan het stylesheet voor de vormgeving -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<!-- De header bevat het navigatiemenu bovenaan de website -->
 <header>
     <nav class="navbar">
+        <!-- Het logo brengt bezoekers terug naar de homepage -->
         <a href="index.html" class="logo">Pagina.io</a>
 
+        <!-- Bevat de navigatielinks naar de verschillende pagina's -->
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="ivo.html">Invoer → Uitvoer</a></li>
 
+            <!-- Dit onderdeel bevat het uitklapmenu met onderwerpen -->
             <li class="dropdown">
+                <!-- De knop voor het uitklapmenu -->
                 <button class="dropbtn">Onderwerpen ▾</button>
+
+                <!-- De links die in het uitklapmenu verschijnen -->
                 <div class="dropdown-content">
                     <a href="binair.html">Binair stelsel</a>
                     <a href="kleurmodellen.html">Kleurmodellen</a>
@@ -27,15 +41,19 @@
                 </div>
             </li>
 
+            <!-- Link naar de pagina over kunstmatige intelligentie -->
             <li><a href="ai.html">AI</a></li>
         </ul>
     </nav>
 </header>
 
+<!-- Het main-element bevat de belangrijkste inhoud van de pagina -->
 <main class="container">
 
+    <!-- De hoofdtitel van de pagina -->
     <h1 class="page-title">Compressie</h1>
 
+    <!-- Introductie: legt uit wat compressie is en waarvoor het wordt gebruikt -->
     <p>
         Compressie betekent dat je gegevens kleiner maakt,
         zodat ze minder opslagruimte gebruiken of sneller
@@ -43,8 +61,10 @@
         afbeeldingen, video's en andere bestanden.
     </p>
 
+    <!-- De cards-container groepeert de informatiekaarten -->
     <div class="cards">
 
+        <!-- Eerste kaart: uitleg over bitmapafbeeldingen -->
         <div class="card">
             <h3>🟦 Bitmap</h3>
 
@@ -60,6 +80,7 @@
             </p>
         </div>
 
+        <!-- Tweede kaart: uitleg over vectorafbeeldingen -->
         <div class="card">
             <h3>📐 Vector</h3>
 
@@ -77,20 +98,25 @@
 
     </div>
 
+    <!-- Dit visuele gedeelte bevat de afbeelding en aanvullende uitleg -->
     <div class="visual">
         <div>
+            <!-- Toont de afbeelding over gegevenscompressie -->
             <img
                 src="images/Compression.jpg"
                 alt="Illustratie van gegevenscompressie"
                 style="width:100%; max-width:450px; height:180px; object-fit:cover; border-radius:10px;"
             >
 
+            <!-- Symboliseert dat gegevens kleiner worden gemaakt en verpakt -->
             <div class="big-symbol">🟩 → 📦</div>
 
+            <!-- Tussenkop bij het visuele voorbeeld -->
             <h2>Compressie maakt gegevens kleiner</h2>
         </div>
     </div>
 
+    <!-- Vergelijkt bitmap- en vectorafbeeldingen -->
     <h2>Bitmap versus vector</h2>
 
     <p>
@@ -99,38 +125,45 @@
         terwijl een vector lijnen en vormen gebruikt.
     </p>
 
+    <!-- Tabel met de belangrijkste verschillen tussen bitmap en vector -->
     <table>
         <tr>
+            <!-- Kolomkoppen van de vergelijkingstabel -->
             <th></th>
             <th>Bitmap</th>
             <th>Vector</th>
         </tr>
 
         <tr>
+            <!-- Vergelijkt hoe beide afbeeldingstypen zijn opgebouwd -->
             <td>Opbouw</td>
             <td>Pixels</td>
             <td>Lijnen en vormen</td>
         </tr>
 
         <tr>
+            <!-- Geeft een voorbeeld van beide afbeeldingstypen -->
             <td>Voorbeeld</td>
             <td>Digitale foto</td>
             <td>Logo of pictogram</td>
         </tr>
 
         <tr>
+            <!-- Laat zien wat er gebeurt wanneer de afbeelding wordt vergroot -->
             <td>Vergroten</td>
             <td>Kan wazig worden</td>
             <td>Blijft scherp</td>
         </tr>
 
         <tr>
+            <!-- Toont veelgebruikte bestandsformaten -->
             <td>Bestandsformaat</td>
             <td>JPG, PNG</td>
             <td>SVG</td>
         </tr>
     </table>
 
+    <!-- Legt het verband uit tussen afbeeldingen en compressie -->
     <h2>Wat heeft dit met compressie te maken?</h2>
 
     <p>
@@ -148,10 +181,13 @@
         worden, maar kan de kwaliteit ook afnemen.
     </p>
 
+    <!-- Dit gedeelte bevat de uitlegvideo en de toelichting daarop -->
     <div class="video-box">
 
+        <!-- Titel boven de video -->
         <h2>🎬 Video over compressie</h2>
 
+        <!-- Legt uit waarom de video bij de theorie is geplaatst -->
         <p>
             <strong>Waarom deze video?</strong><br>
             Deze video is toegevoegd om extra uitleg te geven
@@ -160,6 +196,7 @@
             in de praktijk werkt.
         </p>
 
+        <!-- Sluit de YouTube-video in op de pagina -->
         <iframe
        src="https://www.youtube.com/embed/OtDxDvCpPL4"
     title="Compression - Crash Course Computer Science"
@@ -170,10 +207,12 @@
 
 </main>
 
+<!-- De footer bevat informatie onderaan de website -->
 <footer>
       <p>© 2026 Pagina.io</p>
     <p>
         Heb je nog vragen? Stuur gerust een
+        <!-- Opent het e-mailprogramma wanneer een bezoeker op de link klikt -->
         <a href="mailto:khalil.boufares@vlietlandcollege.nl">
             e-mail naar Khalil
         </a>.

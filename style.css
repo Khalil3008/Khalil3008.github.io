@@ -333,3 +333,43 @@ footer {
         font-size: 2.2rem;
     }
 }
+/* Homepage: groene achtergrond en elementen onder elkaar */
+.hero {
+    background: linear-gradient(135deg, #123b2b, #176b43, #0b3d2b);
+    min-height: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 30px;
+    box-sizing: border-box;
+}
+
+/* Label boven Pagina.io */
+.hero .badge {
+    background: white;
+    color: #176b43;
+    border-radius: 25px;
+    padding: 12px 20px;
+    font-weight: bold;
+    margin: 0 0 15px;
+}
+
+/* Titel in het midden */
+.hero .page-title {
+    color: white;
+    font-size: clamp(48px, 7vw, 88px);
+    margin: 0 0 20px;
+    text-align: center;
+}
+
+/* Welkomsttekst onder de titel */
+.hero > p:last-child {
+    color: white;
+    font-size: 20px;
+    line-height: 1.6;
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: center;
+}

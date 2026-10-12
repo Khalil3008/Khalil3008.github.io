@@ -2,159 +2,221 @@
 <html lang="nl">
 
 <head>
+    <!-- Geeft aan dat dit een HTML5-document is -->
+    <!-- lang="nl" geeft aan dat de taal van de website Nederlands is -->
+
     <meta charset="UTF-8">
+    <!-- Zorgt ervoor dat speciale tekens, zoals é en →, goed worden weergegeven -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina.io | Binair stelsel</title>
+    <!-- Zorgt ervoor dat de website zich aanpast aan de schermgrootte van het apparaat -->
+
+    <title>Binair stelsel | Pagina.io</title>
+    <!-- Bepaalt de titel die bovenaan het browsertabblad verschijnt -->
+
     <link rel="stylesheet" href="style.css">
+    <!-- Verbindt deze HTML-pagina met het CSS-bestand voor de vormgeving -->
 </head>
 
 <body>
+    <!-- Hier begint de inhoud die bezoekers op de website zien -->
 
-<header>
-    <nav class="navbar">
-        <a href="index.html" class="logo">Pagina.io</a>
+    <header>
+        <!-- De header bevat de bovenkant van de website en het navigatiemenu -->
 
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="ivo.html">Invoer → Uitvoer</a></li>
+        <nav class="navbar">
+            <!-- Het navigatiemenu waarmee bezoekers tussen pagina's kunnen wisselen -->
 
-            <li class="dropdown">
-                <button class="dropbtn">Onderwerpen ▾</button>
-                <div class="dropdown-content">
-                    <a href="binair.html">Binair stelsel</a>
-                    <a href="kleurmodellen.html">Kleurmodellen</a>
-                    <a href="compressie.html">Compressie</a>
+            <a href="index.html" class="logo">Pagina.io</a>
+            <!-- Dit is het logo; door erop te klikken ga je naar de homepage -->
+
+            <ul class="nav-links">
+                <!-- Maakt een lijst met navigatielinks -->
+
+                <li><a href="index.html">Home</a></li>
+                <!-- Link naar de homepage -->
+
+                <li><a href="ivo.html">Invoer → Uitvoer</a></li>
+                <!-- Link naar de pagina over invoer, verwerking en uitvoer -->
+
+                <li class="dropdown">
+                    <!-- Dit onderdeel bevat het uitklapmenu met onderwerpen -->
+
+                    <button class="dropbtn">Onderwerpen ▾</button>
+                    <!-- Knop waarmee het uitklapmenu wordt geopend -->
+
+                    <div class="dropdown-content">
+                        <!-- Bevat de links die in het uitklapmenu verschijnen -->
+
+                        <a href="binair.html">Binair stelsel</a>
+                        <!-- Link naar deze pagina -->
+
+                        <a href="kleurmodellen.html">Kleurmodellen</a>
+                        <!-- Link naar de pagina over kleurmodellen -->
+
+                        <a href="compressie.html">Compressie</a>
+                        <!-- Link naar de pagina over compressie -->
+                    </div>
+                </li>
+
+                <li><a href="ai.html">AI</a></li>
+                <!-- Link naar de pagina over kunstmatige intelligentie -->
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Het main-element bevat de belangrijkste inhoud van de pagina -->
+
+        <section class="container">
+            <!-- De container groepeert de inhoud en regelt via CSS de breedte en ruimte -->
+
+            <h1>Het binaire stelsel</h1>
+            <!-- De hoofdtitel van de pagina -->
+
+            <p>
+                Computers werken met bits. Een bit kan de waarde 0 of 1 hebben.
+                Het binaire stelsel gebruikt daarom alleen de cijfers 0 en 1.
+            </p>
+            <!-- Introductie waarin wordt uitgelegd wat het binaire stelsel is -->
+
+            <div class="visual">
+                <!-- Dit gedeelte bevat een afbeelding en uitleg over binair rekenen -->
+
+                <img src="images/binary.jpg"
+                     alt="Illustratie van het binaire getallenstelsel">
+                <!-- Toont de afbeelding binary.jpg uit de map images -->
+                <!-- Het alt-attribuut beschrijft de afbeelding voor mensen die deze niet kunnen zien -->
+
+                <h2>Hoe werkt het?</h2>
+                <!-- Tussenkop voor de uitleg -->
+
+                <p>
+                    Elke positie in een binair getal heeft een waarde.
+                    Van rechts naar links zijn die waarden 1, 2, 4, 8, 16, 32, 64 en 128.
+                </p>
+                <!-- Legt uit dat iedere positie een macht van 2 vertegenwoordigt -->
+
+                <p>
+                    Bij een 1 tel je de waarde van die positie mee.
+                    Bij een 0 tel je die waarde niet mee.
+                </p>
+                <!-- Legt uit hoe je een binair getal omzet naar een decimaal getal -->
+
+            </div>
+
+            <section class="example">
+                <!-- Dit gedeelte geeft een concreet rekenvoorbeeld -->
+
+                <h2>Voorbeeld: van binair naar decimaal</h2>
+                <!-- Titel van het rekenvoorbeeld -->
+
+                <p>We gebruiken het binaire getal 00101010.</p>
+                <!-- Het binaire getal dat we gaan omrekenen -->
+
+                <table>
+                    <!-- Maakt een tabel om de posities en hun waarden overzichtelijk te tonen -->
+
+                    <tr>
+                        <!-- Eerste tabelrij met de positiewaarden -->
+
+                        <th>Positie</th>
+                        <th>128</th>
+                        <th>64</th>
+                        <th>32</th>
+                        <th>16</th>
+                        <th>8</th>
+                        <th>4</th>
+                        <th>2</th>
+                        <th>1</th>
+                    </tr>
+
+                    <tr>
+                        <!-- Tweede tabelrij met de cijfers van het binaire getal -->
+
+                        <th>Bit</th>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>0</td>
+                    </tr>
+
+                </table>
+
+                <p>
+                    We tellen de positiewaarden op waar een 1 staat:
+                    32 + 8 + 2 = 42.
+                </p>
+                <!-- Laat zien dat 00101010 in het decimale stelsel gelijk is aan 42 -->
+
+            </section>
+
+            <section class="cards">
+                <!-- Dit gedeelte bevat een kaart met een interactieve oefening -->
+
+                <div class="card">
+                    <!-- De card-klasse geeft dit onderdeel de vormgeving van een kaart -->
+
+                    <h2>Zelf oefenen</h2>
+                    <!-- Titel van de oefening -->
+
+                    <p>
+                        Test je kennis van het binaire stelsel met deze interactieve oefening.
+                    </p>
+                    <!-- Legt uit wat de bezoeker bij de link kan doen -->
+
+                    <a href="https://games.penjee.com/binary-bonanza/"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Speel Binary Bonanza
+                    </a>
+                    <!-- Opent de oefening op een nieuwe browsertab -->
+                    <!-- rel voorkomt dat de nieuwe pagina via de link toegang krijgt tot de opener-pagina -->
+
                 </div>
-            </li>
+            </section>
 
-            <li><a href="ai.html">AI</a></li>
-        </ul>
-    </nav>
-</header>
+            <div class="video-box">
+                <!-- Dit blok bevat de uitlegvideo over het binaire stelsel -->
 
-<main class="container">
+                <h2>Bekijk de uitlegvideo</h2>
+                <!-- Titel boven de video -->
 
-    <h1 class="page-title">Het binaire stelsel</h1>
+                <p>
+                    Bekijk de video voor meer uitleg over het binaire stelsel.
+                </p>
+                <!-- Korte introductie van de video -->
 
-    <p>
-        Computers werken uiteindelijk met heel veel nullen en enen.
-        Dit noemen we het <strong>binaire stelsel</strong>.
-        Het binaire stelsel gebruikt dus maar twee cijfers:
-        <strong>0 en 1</strong>.
-    </p>
+                <iframe
+                    src="https://www.youtube.com/embed/OpaB2SaNIyA"
+                    title="Uitleg over het binaire stelsel"
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                </iframe>
+                <!-- Toont de YouTube-video rechtstreeks op de website -->
+                <!-- src bepaalt welke video wordt geladen -->
+                <!-- title beschrijft de video voor toegankelijkheid -->
+                <!-- allow geeft toestemming voor bepaalde videofuncties -->
+                <!-- allowfullscreen maakt volledig scherm mogelijk -->
 
-    <div class="visual">
-        <div>
-            <img
-                src="images/binary.jpg"
-                alt="Afbeelding van het binaire stelsel"
-                style="width: 100%; max-width: 450px; height: 180px; object-fit: cover; border-radius: 10px;">
+            </div>
 
-            <div class="big-symbol">01001000</div>
-            <h2>0 en 1 vormen de basis van digitale informatie</h2>
-        </div>
-    </div>
+        </section>
+    </main>
 
-    <h2>Hoe werkt het?</h2>
+    <footer>
+        <!-- De footer is het onderste gedeelte van de website -->
 
-    <p>
-        In het gewone decimale stelsel gebruiken we de cijfers
-        0 tot en met 9. In het binaire stelsel zijn er maar twee
-        mogelijkheden: 0 en 1.
-    </p>
+        <p>© 2026 Pagina.io — gemaakt door Khalil</p>
+        <!-- Vermeldt het copyrightjaar, de naam van de website en de maker -->
 
-    <p>
-        Elke positie in een binair getal heeft een waarde die
-        een macht van 2 is. Van rechts naar links zijn de waarden
-        1, 2, 4, 8, 16, 32, 64, 128 enzovoort.
-    </p>
-
-    <table>
-        <tr>
-            <th>Positie</th>
-            <th>128</th>
-            <th>64</th>
-            <th>32</th>
-            <th>16</th>
-            <th>8</th>
-            <th>4</th>
-            <th>2</th>
-            <th>1</th>
-        </tr>
-
-        <tr>
-            <td>Getal</td>
-            <td>0</td>
-            <td>0</td>
-            <td>1</td>
-            <td>0</td>
-            <td>1</td>
-            <td>0</td>
-            <td>1</td>
-            <td>0</td>
-        </tr>
-    </table>
-
-    <p>
-        Het binaire getal <strong>00101010</strong> is bijvoorbeeld:
-        32 + 8 + 2 = <strong>42</strong>.
-        Je telt dus alleen de positiewaarden op waar een 1 staat.
-    </p>
-
-    <div class="card">
-
-        <h2>🎮 Binary Bonanza</h2>
-
-        <p>
-            Met Binary Bonanza kun je op een leuke manier oefenen
-            met binaire getallen. Het spel helpt je om beter te
-            begrijpen hoe het binaire stelsel werkt.
-        </p>
-
-        <div class="visual">
-            <div class="big-symbol">0 1 0 1 1 0 1 0</div>
-        </div>
-
-        <a
-            class="button"
-            href="https://games.penjee.com/binary-bonanza/"
-            target="_blank"
-            rel="noopener noreferrer">
-            Speel Binary Bonanza →
-        </a>
-
-    </div>
-
-    <div class="video-box">
-
-        <h2>🎬 Video over het binaire stelsel</h2>
-
-        <p>
-            Bekijk de volledige video voor extra uitleg over
-            het binaire stelsel en het werken met binaire getallen.
-        </p>
-
-        <iframe
-            src="https://www.youtube.com/embed/OpaB2SaNIyA"
-            title="Uitleg over het binaire stelsel"
-            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen>
-        </iframe>
-
-    </div>
-
-</main>
-
-<footer>
-   <p>© 2026 Pagina.io</p>
-    <p>
-        Heb je nog vragen? Stuur gerust een
-        <a href="mailto:khalil.boufares@vlietlandcollege.nl">
-            e-mail naar Khalil
-        </a>.
-    </p>
-</footer>
+    </footer>
 
 </body>
 </html>

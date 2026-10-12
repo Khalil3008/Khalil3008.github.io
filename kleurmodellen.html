@@ -2,135 +2,188 @@
 <html lang="nl">
 
 <head>
+    <!-- Geeft aan dat dit document HTML5 gebruikt -->
+    <!-- lang="nl" geeft aan dat de taal van de website Nederlands is -->
+
     <meta charset="UTF-8">
+    <!-- Zorgt ervoor dat speciale tekens goed worden weergegeven -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina.io | Kleurmodellen</title>
+    <!-- Zorgt ervoor dat de website goed wordt weergegeven op verschillende schermformaten -->
+
+    <title>Kleurmodellen | Pagina.io</title>
+    <!-- Bepaalt de titel die bovenaan het browsertabblad verschijnt -->
+
     <link rel="stylesheet" href="style.css">
+    <!-- Koppelt het CSS-bestand aan deze pagina voor de vormgeving -->
 </head>
 
 <body>
+    <!-- Hier begint de inhoud die bezoekers op de website zien -->
 
-<header>
-    <nav class="navbar">
-        <a href="index.html" class="logo">Pagina.io</a>
+    <header>
+        <!-- De header bevat de bovenkant van de website, waaronder het navigatiemenu -->
 
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="ivo.html">Invoer → Uitvoer</a></li>
+        <nav class="navbar">
+            <!-- Het navigatiemenu waarmee bezoekers naar andere pagina's kunnen gaan -->
 
-            <li class="dropdown">
-                <button class="dropbtn">Onderwerpen ▾</button>
-                <div class="dropdown-content">
-                    <a href="binair.html">Binair stelsel</a>
-                    <a href="kleurmodellen.html">Kleurmodellen</a>
-                    <a href="compressie.html">Compressie</a>
+            <a href="index.html" class="logo">Pagina.io</a>
+            <!-- Dit is het logo; als je erop klikt, ga je naar de homepage -->
+
+            <ul class="nav-links">
+                <!-- Maakt een lijst met links naar de verschillende pagina's -->
+
+                <li><a href="index.html">Home</a></li>
+                <!-- Link naar de homepage -->
+
+                <li><a href="ivo.html">Invoer → Uitvoer</a></li>
+                <!-- Link naar de pagina over invoer, verwerking en uitvoer -->
+
+                <li class="dropdown">
+                    <!-- Dit onderdeel bevat het uitklapmenu -->
+
+                    <button class="dropbtn">Onderwerpen ▾</button>
+                    <!-- Knop waarmee het uitklapmenu wordt geopend -->
+
+                    <div class="dropdown-content">
+                        <!-- Hier staan de links die in het uitklapmenu verschijnen -->
+
+                        <a href="binair.html">Binair stelsel</a>
+                        <!-- Link naar de pagina over het binaire stelsel -->
+
+                        <a href="kleurmodellen.html">Kleurmodellen</a>
+                        <!-- Link naar deze pagina over kleurmodellen -->
+
+                        <a href="compressie.html">Compressie</a>
+                        <!-- Link naar de pagina over compressie -->
+
+                    </div>
+                </li>
+
+                <li><a href="ai.html">AI</a></li>
+                <!-- Link naar de pagina over kunstmatige intelligentie -->
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Het main-element bevat de belangrijkste inhoud van deze pagina -->
+
+        <section class="container">
+            <!-- De container groepeert de inhoud en regelt via CSS de breedte en ruimte -->
+
+            <h1>Kleurmodellen</h1>
+            <!-- De hoofdtitel van de pagina -->
+
+            <p>
+                Kleurmodellen worden gebruikt om kleuren digitaal te beschrijven.
+                Twee bekende kleurmodellen zijn RGB en CMYK.
+            </p>
+            <!-- Introduceert het onderwerp en noemt de twee kleurmodellen -->
+
+            <div class="visual">
+                <!-- Dit gedeelte bevat een afbeelding en algemene uitleg -->
+
+                <img src="images/colors.jpg"
+                     alt="Voorbeeld van verschillende kleuren">
+                <!-- Toont de afbeelding colors.jpg uit de map images -->
+                <!-- Het alt-attribuut beschrijft de afbeelding voor toegankelijkheid -->
+
+                <h2>Wat zijn kleurmodellen?</h2>
+                <!-- Tussenkop voor de uitleg over kleurmodellen -->
+
+                <p>
+                    Een kleurmodel beschrijft hoe kleuren worden opgebouwd
+                    met behulp van verschillende kleurcomponenten.
+                </p>
+                <!-- Legt uit wat een kleurmodel is -->
+
+            </div>
+
+            <div class="cards">
+                <!-- De cards-container groepeert meerdere informatiekaarten -->
+
+                <div class="card">
+                    <!-- Eerste kaart: uitleg over RGB -->
+
+                    <h2>RGB</h2>
+                    <!-- Titel van het eerste kleurmodel -->
+
+                    <p>
+                        RGB staat voor Red, Green en Blue.
+                        Dit kleurmodel gebruikt rood, groen en blauw licht
+                        om verschillende kleuren op een scherm te maken.
+                    </p>
+                    <!-- Beschrijft hoe RGB kleuren op schermen maakt -->
+
+                    <p>
+                        Door de hoeveelheid rood, groen en blauw licht te veranderen,
+                        kunnen veel verschillende kleuren worden weergegeven.
+                    </p>
+                    <!-- Legt uit dat de combinatie van de drie lichtkleuren andere kleuren oplevert -->
+
                 </div>
-            </li>
 
-            <li><a href="ai.html">AI</a></li>
-        </ul>
-    </nav>
-</header>
+                <div class="card">
+                    <!-- Tweede kaart: uitleg over CMYK -->
 
-<main class="container">
+                    <h2>CMYK</h2>
+                    <!-- Titel van het tweede kleurmodel -->
 
-    <h1 class="page-title">Kleurmodellen</h1>
+                    <p>
+                        CMYK staat voor Cyan, Magenta, Yellow en Key (zwart).
+                        Dit kleurmodel wordt vooral gebruikt bij het afdrukken
+                        van afbeeldingen en documenten.
+                    </p>
+                    <!-- Beschrijft de betekenis en toepassing van CMYK -->
 
-    <p>
-        Computers kunnen kleuren digitaal opslaan. Hiervoor
-        worden kleurmodellen gebruikt. Twee bekende kleurmodellen
-        zijn <strong>RGB</strong> en <strong>CMYK</strong>.
-    </p>
+                    <p>
+                        Bij CMYK worden inkten gecombineerd om kleuren op papier
+                        te maken.
+                    </p>
+                    <!-- Legt uit dat CMYK met inkt werkt in plaats van met licht -->
 
-    <div class="cards">
+                </div>
 
-        <div class="card">
-            <h3>🔴 RGB</h3>
-            <p>
-                RGB staat voor Red, Green en Blue.
-                Dit model wordt vooral gebruikt voor schermen,
-                zoals telefoons, televisies en computermonitoren.
-            </p>
-        </div>
+            </div>
 
-        <div class="card">
-            <h3>🖨️ CMYK</h3>
-            <p>
-                CMYK staat voor Cyan, Magenta, Yellow en Key/Black.
-                Dit model wordt vooral gebruikt bij drukwerk.
-            </p>
-        </div>
+            <div class="video-box">
+                <!-- Dit blok bevat de uitlegvideo over kleurmodellen -->
 
-    </div>
+                <h2>Bekijk de uitlegvideo</h2>
+                <!-- Titel boven de video -->
 
-    <div class="visual">
-        <div>
-            <img
-                src="images/colors.jpg"
-                alt="Voorbeeld van RGB-kleuren"
-                style="width:100%; max-width:450px; height:180px; object-fit:cover; border-radius:10px;"
-            >
+                <p>
+                    Bekijk de video voor extra uitleg over kleurmodellen.
+                </p>
+                <!-- Korte introductie van de video -->
 
-            <div class="big-symbol">🔴 🟢 🔵</div>
+                <iframe
+                    src="https://www.youtube.com/embed/-b2pAEHEQZc"
+                    title="Uitleg kleurmodellen"
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                </iframe>
+                <!-- Laadt de YouTube-video rechtstreeks op de website -->
+                <!-- src bepaalt welke video wordt weergegeven -->
+                <!-- title beschrijft de video voor toegankelijkheid -->
+                <!-- allow geeft toestemming voor bepaalde videofuncties -->
+                <!-- allowfullscreen maakt het mogelijk de video op volledig scherm te bekijken -->
 
-            <h2>RGB = Red + Green + Blue</h2>
-        </div>
-    </div>
+            </div>
 
-    <h2>RGB</h2>
+        </section>
+    </main>
 
-    <p>
-        RGB staat voor rood, groen en blauw. Bij dit kleurmodel
-        wordt een kleur gemaakt door deze drie kleuren met
-        verschillende sterktes te combineren. Een scherm bestaat
-        uit heel veel kleine pixels die samen het beeld vormen.
-        Als rood, groen en blauw allemaal op maximale sterkte staan,
-        ontstaat wit. Als alle drie uitstaan, ontstaat zwart.
-    </p>
+    <footer>
+        <!-- De footer is het onderste gedeelte van de website -->
 
-    <h2>CMYK</h2>
+        <p>© 2026 Pagina.io — gemaakt door Khalil</p>
+        <!-- Vermeldt het copyrightjaar, de websitelnaam en de maker -->
 
-    <p>
-        CMYK staat voor Cyan, Magenta, Yellow en Key (zwart).
-        Dit kleurmodel wordt vooral gebruikt bij het afdrukken
-        van afbeeldingen en documenten. Door verschillende
-        hoeveelheden inkt te combineren, kunnen veel kleuren
-        op papier worden weergegeven.
-    </p>
-
-    <div class="video-box">
-
-        <h2>🎬 Video over kleurmodellen</h2>
-
-        <p>
-            <strong>Waarom deze video?</strong><br>
-            Deze video is toegevoegd om meer uitleg te geven
-            over kleurmodellen. Zo kun je beter begrijpen hoe
-            kleuren digitaal worden weergegeven en wat het
-            verschil is tussen verschillende kleurmodellen.
-        </p>
-
-        <iframe
-            src="https://www.youtube.com/embed/-b2pAEHEQZc"
-            title="Uitleg kleurmodellen"
-            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen>
-        </iframe>
-
-    </div>
-
-</main>
-
-<footer>
-     <p>© 2026 Pagina.io</p>
-    <p>
-        Heb je nog vragen? Stuur gerust een
-        <a href="mailto:khalil.boufares@vlietlandcollege.nl">
-            e-mail naar Khalil
-        </a>.
-    </p>
-</footer>
+    </footer>
 
 </body>
 </html>
